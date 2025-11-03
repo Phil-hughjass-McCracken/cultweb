@@ -1,69 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Cult of Phil — Home of the Phillians</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <meta name="theme-color" content="#09000a" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cult of Phil</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="page-home">
-  <div class="bg-veil"></div>
-
-  <header class="site-header">
-    <img src="assets/images/sigil.png" alt="Phil sigil" class="sigil" />
-    <h1>Welcome to <span class="glow">The Cult of Phil</span></h1>
-    <p class="tagline">Home of the <strong>Phillians</strong> — Enlightenment (and bad decisions) await.</p>
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="bible.html">The Bible</a>
-      <a href="feed.html">Cursed Video Feed</a>
-      <a href="confessions.html">Confessions</a>
-      <a href="phillians.html">Phillians</a>
-      <a href="enemies.html">Enemies</a>
-      <a href="portal.html" class="cta">MyCult Portal</a>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bible.html">Bible</a></li>
+        <li><a href="feed.html">Cursed Feed</a></li>
+        <li><a href="enemies.html">Enemies</a></li>
+        <li><a href="phillians.html">Phillians</a></li>
+        <li><a href="signup.html">Join MyCult</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>Join the Cult</h2>
-      <p>We are equal parts ominous and hilarious. Read the Bible, watch the cursed videos, confess your weirdness, and meet the Phillians.</p>
-      <a href="portal.html" class="button">Enter the MyCult Portal</a>
-    </section>
+  <section class="hero">
+    <img src="assets/images/sigil.png" alt="Cult Sigil" class="sigil">
+    <h1>Welcome to the Cult of Phil</h1>
+    <p>Chaos, Soda, and the Glory of Phil.</p>
+    <a href="phillians.html" class="cta-button">Meet the Phillians</a>
+  </section>
 
-    <section class="featured">
-      <h3>Featured Confession</h3>
-      <article class="card">
-        <h4><a href="confession666.html">Confession 666 — The Midnight Soda</a></h4>
-        <p class="muted">A short, strange tale from a Phillian who tested the shrine at 3 a.m.</p>
-        <a class="link-inline" href="confession666.html">Read →</a>
-      </article>
-    </section>
+  <section class="youtube-grid">
+    <h2>Phil's Channels</h2>
+    <div class="grid-container">
+      <a href="https://youtube.com/@mydihburns" target="_blank" class="yt-card">
+        <img src="https://img.youtube.com/vi/placeholder1/hqdefault.jpg" alt="Phil McCracken">
+        <h3>Phil McCracen</h3>
+      </a>
+      <a href="https://youtube.com/@thecultofphil" target="_blank" class="yt-card">
+        <img src="https://img.youtube.com/vi/placeholder2/hqdefault.jpg" alt="The Cult of Phil">
+        <h3>The Cult of Phil</h3>
+      </a>
+      <a href="https://youtube.com/@mybootycheekshurts" target="_blank" class="yt-card">
+        <img src="https://img.youtube.com/vi/placeholder3/hqdefault.jpg" alt="Phil Shorts">
+        <h3>Phil Shorts</h3>
+      </a>
+      <a href="https://youtube.com/@phillietskidschannel" target="_blank" class="yt-card">
+        <img src="https://img.youtube.com/vi/placeholder4/hqdefault.jpg" alt="Phillie's Kids Channel">
+        <h3>Philliet's Kids Channel</h3>
+      </a>
+      <div class="yt-card placeholder">
+        <h3>Placeholder 1</h3>
+      </div>
+      <div class="yt-card placeholder">
+        <h3>Placeholder 2</h3>
+      </div>
+    </div>
+  </section>
 
-    <section class="quick-links">
-      <div>
-        <h4>Latest Verse</h4>
-        <p class="muted">“If you can’t find the light, wear it.” — Book of Phil, Ch. 1</p>
-      </div>
-      <div>
-        <h4>Video Feed</h4>
-        <p class="muted">New cursed clips and short clips — curated for enlightenment.</p>
-        <a href="feed.html" class="link-inline">Watch →</a>
-      </div>
-      <div>
-        <h4>Phillians & Allies</h4>
-        <p class="muted">Meet our roster and our allies — some of them may be imaginary.</p>
-        <a href="phillians.html" class="link-inline">Meet →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year"></span> Cult of Phil — Not responsible for lost socks, burnt toast, or spiritual impromptu karaoke.</p>
-  </footer>
+  <canvas id="bg-canvas"></canvas>
 
   <script src="assets/script.js"></script>
 </body>
 </html>
-
