@@ -1,1 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyCult Portal — Cult of Phil</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body class="page-portal">
+  <div class="bg-veil"></div>
+
+  <header class="site-header small">
+    <h1>MyCult Portal</h1>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="bible.html">Bible</a>
+      <a href="feed.html">Feed</a>
+      <a href="confessions.html">Confessions</a>
+      <a href="phillians.html">Phillians</a>
+    </nav>
+  </header>
+
+  <main class="container portal">
+    <p class="muted">This is a CSS-only, theatrical "portal". Enter the password (try anything — it's just for show).</p>
+
+    <form id="portalForm" onsubmit="return portalAttempt(event)">
+      <label for="portalPassword">Portal Passphrase</label>
+      <input id="portalPassword" type="password" placeholder="Enter passphrase" />
+      <button type="submit" class="button">Attempt Access</button>
+    </form>
+
+    <div id="portalContent" class="portal-content hidden">
+      <h3>Access Granted</h3>
+      <p>Secret links for portal members:</p>
+      <ul>
+        <li><a href="confession666.html">Archived Confession 666</a></li>
+        <li><a href="bible.html">Edit: Book of Phil (portal notes)</a></li>
+        <li><a href="phillians.html">Private Phillian roster</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer"><a href="index.html">Home</a></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
 
